@@ -103,9 +103,9 @@
 #pragma mark -
 #pragma mark 心跳包
 - (void)sendHeart:(NSTimer *)timer{
-    [_socket sendPing:[NSData dataWithBytes:@"trip" length:5]];
-    self.textView.text = [self.textView.text stringByAppendingString:[NSString stringWithFormat:@"发送心跳包❤️ \n"]];
-    [_textView scrollRangeToVisible:NSMakeRange(_textView.text.length, 1)];
+//    [_socket sendPing:[NSData dataWithBytes:@"trip" length:5]];
+//    self.textView.text = [self.textView.text stringByAppendingString:[NSString stringWithFormat:@"发送心跳包❤️ \n"]];
+//    [_textView scrollRangeToVisible:NSMakeRange(_textView.text.length, 1)];
 }
 -(void)resetSocket{
     _socket = nil;
